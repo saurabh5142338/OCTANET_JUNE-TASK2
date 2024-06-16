@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <div class="logo">
+                <img src="https://w7.pngwing.com/pngs/258/812/png-transparent-to-do-list-illustration-computer-icons-survey-methodology-scalable-graphics-icon-symbol-survey-text-rectangle-logo-thumbnail.png" alt="To-Do List">
+                <p>To-Do List</p>
+            </div>
+            <ul>
+                <a href="ToDopage.html">
+                    <li>Home</li>
+                </a>
+                <li>
+                    <a href="ToDo.html">To-Do</a>
+                </li>
+                <a href="contacts.html">
+                    <li>Contacts</li>
+                </a>
+                <a href="main">
+                    <li>Sign in</li>
+                </a>
+            </ul>
+        </nav>
+    </header>
+    <div class="main">
+        <img src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Hero_ToDo_960x615_2x_1_RE3HTxG?resMode=sharp2&op_usm=1.5,0.65,15,0&wid=1920&qlt=100&fmt=png-alpha&fit=constrain" alt="ToDo list image">
+        <div class="content">
+    <div class="container">
+        <h1>To-Do List</h1>
+        <form id="task-form">
+            <input type="text" id="task-input" placeholder="New task..." required>
+            <input type="text" id="category-input" placeholder="Category" required>
+            <input type="date" id="due-date-input" required>
+            <select id="priority-input" required>
+                <option value="" disabled selected>Priority</option>
+                <option value="high">High</option>
+                <option value="medium">Medium</option>
+                <option value="low">Low</option>
+            </select>
+            <button type="submit">Add Task</button>
+        </form>
+        <ul id="task-list"></ul>
+    </div>
+</body>
+</html>
